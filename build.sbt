@@ -15,7 +15,7 @@ crossScalaVersions ++= List(
   "2.12.17",
 )
 crossVersion := CrossVersion.full
-organization := "io.tryp"
+organization := "com.traveltime"
 name := "splain"
 fork := true
 libraryDependencies ++= List(
@@ -66,8 +66,8 @@ scalacOptions ++= List(
 
 publishMavenStyle := true
 publishTo := Some(
-  if (isSnapshot.value) Opts.resolver.sonatypeSnapshots
-  else Resolver.url("sonatype staging", url("https://oss.sonatype.org/service/local/staging/deploy/maven2"))
+  if (isSnapshot.value) "iGeolise releases" at "https://artifactory.igeolise.com/artifactory/libs-snapshot"
+  else "iGeolise releases" at "https://artifactory.igeolise.com/artifactory/libs-release"
 )
 licenses := List("MIT" -> url("http://opensource.org/licenses/MIT"))
 homepage := Some(url(repo))
