@@ -16,7 +16,7 @@ crossScalaVersions ++= List(
   "2.12.18",
 )
 crossVersion := CrossVersion.full
-organization := "com.traveltime"
+organization := "io.tryp"
 name := "splain"
 fork := true
 libraryDependencies ++= List(
@@ -67,8 +67,8 @@ scalacOptions ++= List(
 
 publishMavenStyle := true
 publishTo := Some(
-  if (isSnapshot.value) "iGeolise releases" at "https://artifactory.igeolise.com/artifactory/libs-snapshot"
-  else "iGeolise releases" at "https://artifactory.igeolise.com/artifactory/libs-release"
+  if (isSnapshot.value) "iGeolise releases" at "https://artifactory.igeolise.com/artifactory/ext-snapshot-local"
+  else "iGeolise releases" at "https://artifactory.igeolise.com/artifactory/ext-release-local"
 )
 licenses := List("MIT" -> url("http://opensource.org/licenses/MIT"))
 homepage := Some(url(repo))
