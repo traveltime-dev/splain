@@ -14,6 +14,7 @@ crossScalaVersions ++= List(
   "2.12.16",
   "2.12.17",
   "2.12.18",
+  "2.12.19",
   "2.12.20",
 )
 crossVersion := CrossVersion.full
